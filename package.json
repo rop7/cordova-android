@@ -1,10 +1,13 @@
 {
   "name": "cordova-android",
-  "version": "15.0.0",
+  "version": "14.0.0",
   "description": "cordova-android release",
   "types": "./types/index.d.ts",
   "main": "lib/Api.js",
-  "repository": "github:apache/cordova-android",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rop7/rsp-libcore.js.git"
+  },
   "bugs": "https://github.com/apache/cordova-android/issues",
   "keywords": [
     "android",
@@ -21,7 +24,9 @@
     "e2e-tests": "jasmine --config=spec/e2e/jasmine.json",
     "java-unit-tests": "node test/run_java_unit_tests.js"
   },
-  "author": "Apache Software Foundation",
+
+  "private": false,
+  "author": "@ropsoft <rop@ropsoft.cloud>",
   "license": "Apache-2.0",
   "dependencies": {
     "android-versions": "^2.1.0",
